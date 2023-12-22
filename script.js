@@ -138,7 +138,8 @@ function resetGame() {
 
 reset.forEach(r => {
     r.addEventListener('click', () => {
-        resetGame()
+        resetGame();
+        location.reload();
     
     });
 });
