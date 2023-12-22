@@ -1,7 +1,7 @@
 const circles = document.querySelectorAll('.circle');
 const changeplayer = document.querySelector('.change-player'); 
 const currentPlayer = document.querySelector('.current-player');
-const reset = document.querySelector('button');
+const reset = document.querySelectorAll('button');
 const rowOne = document.querySelectorAll('.row1')
 const rowTwo = document.querySelectorAll('.row2')
 const rowThree = document.querySelectorAll('.row3')
@@ -136,9 +136,11 @@ function resetGame() {
 
 }
 
-reset.addEventListener('click', () => {
-    resetGame()
-
+reset.forEach(r => {
+    r.addEventListener('click', () => {
+        resetGame()
+    
+    });
 });
 
 
