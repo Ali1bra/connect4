@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>connect 4</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="winchecker/yellowvertical.js" defer></script>
+    <script src="winchecker/yellowhorizontal.js" defer></script>
+    <script src="winchecker/redhorizontal.js" defer></script>
+    <script src="winchecker/redvertical.js" defer></script>
+    <script src="winchecker/redobliquely.js" defer></script>
+    <script src="winchecker/yellowobliquely.js" defer></script>
+
+</head>
+<body>
+    <div class="winner-popup">
+        <div class="dropdown">tillykke player</div>
+        <button>play again</button>
+    </div>
+    
+    <div class="container">
+
+        <h1>Connect 4</h1>
+        <button>empty map</button>
+        <div class="outer-border">
+        <div class="map">
+            <div class="circle row5"></div>
+            <div class="circle row5"></div>
+            <div class="circle row5"></div>
+            <div class="circle row5"></div>
+            <div class="circle row5"></div>
+            <div class="circle row5"></div>
+            <div class="circle row5"></div>
+            <div class="circle row4"></div>
+            <div class="circle row4"></div>
+            <div class="circle row4"></div>
+            <div class="circle row4"></div>
+            <div class="circle row4"></div>
+            <div class="circle row4"></div>
+            <div class="circle row4"></div>
+            <div class="circle row3"></div>
+            <div class="circle row3"></div>
+            <div class="circle row3"></div>
+            <div class="circle row3"></div>
+            <div class="circle row3"></div>
+            <div class="circle row3"></div>
+            <div class="circle row3"></div>
+            <div class="circle row2"></div>
+            <div class="circle row2"></div>
+            <div class="circle row2"></div>
+            <div class="circle row2"></div>
+            <div class="circle row2"></div>
+            <div class="circle row2"></div>
+            <div class="circle row2"></div>
+            <div class="circle row1"></div>
+            <div class="circle row1"></div>
+            <div class="circle row1"></div>
+            <div class="circle row1"></div>
+            <div class="circle row1"></div>
+            <div class="circle row1"></div>
+            <div class="circle row1"></div>
+        </div>
+    </div>
+
+    <div class="change-player">1</div> <!-- fortæller hvis tur det er -->
+
+    <div class="current-player">
+        <div contenteditable="true" class="playerOne">PLAYER 1</div>
+        <div class="counter">10</div>
+        <div contenteditable="true" class="playerTwo">PLAYER 2</div>
+    </div>
+
+    <div class="gamestarts"></div>
+    </div>
+
+        
+</body>
+</html>

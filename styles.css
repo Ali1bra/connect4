@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Silkscreen&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+
+.container{
+    margin: auto;
+    background-color: #2b91ff;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+
+}
+
+button{
+    margin: 20px 0px 70px 0px;
+    padding: 5px 20px;
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+}
+button:active{
+    background-color: rgba(0, 0, 0, 0.427);
+    transition: 1s;
+}
+
+.outer-border{
+    width: fit-content;
+    height: fit-content;
+    background-color: green;
+    border: 10px solid #0058c2;
+    box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.531);
+}
+
+
+.map{
+    width: 500px;
+    height: 370px;
+    background-color: #0058c2;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 10px;
+
+
+}
+
+.circle{
+    width: 65px;
+    height: 65px;
+    background-color:  #fff;
+    border-radius: 100px;
+    border:  4px solid #0058c2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.795);
+    transition: 0.5s;
+}
+
+.change-player{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    opacity: 0;
+}
+
+
+.current-player{
+    width: 400px;
+    height: 50px;
+    background-color: rgba(255, 166, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.counter{
+    font-size: 25px;
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    color: white;
+    
+}
+.playerOne{
+    width: 40%;
+    height: 100%;
+    background-color: #0058c2;
+    box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.461);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.413);
+    
+
+}
+.playerTwo{
+    width: 40%;
+    height: 100%;
+    background-color:#0058c2;
+    box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.461);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.413);
+
+}
+
+.gamestarts{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    opacity: 0;
+}
+
+.winner-popup{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.754);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.displaytrue{
+    display: flex;
+}
+.dropdown{
+    width: 200px;
+    height: 50px;
+    background-color: #0058c2;
+    position:fixed;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.531);
+    transform: translateY(-100px);
+
+}
